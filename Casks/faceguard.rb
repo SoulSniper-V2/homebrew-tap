@@ -9,6 +9,11 @@ cask "faceguard" do
 
   app "FaceGuard.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/FaceGuard.app"]
+  end
+
   zap trash: [
     "~/Library/Preferences/com.soulsniper.faceguard.plist",
   ]
