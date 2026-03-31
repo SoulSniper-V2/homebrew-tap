@@ -9,6 +9,11 @@ cask "clipstash" do
 
   app "ClipStash.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/ClipStash.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/ClipStash",
     "~/Library/Preferences/com.clipstash.app.plist",

@@ -9,6 +9,11 @@ cask "portable-vpn" do
 
   app "PortableVPN.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/PortableVPN.app"]
+  end
+
   zap trash: [
     "~/.portable_tor_data",
     "~/Library/Application Support/com.user.portablevpn",

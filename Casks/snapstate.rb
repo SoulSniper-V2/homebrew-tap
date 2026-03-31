@@ -9,6 +9,11 @@ cask "snapstate" do
 
   app "SnapState.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/SnapState.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/SnapState",
   ]
