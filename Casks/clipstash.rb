@@ -1,6 +1,6 @@
 cask "clipstash" do
-  version "2.2.0"
-  sha256 "5953e1ce2cac361a3ef9956f7998b1fbe010a0e07cc3d99cc66c233452e0a72d"
+  version "2.3.0"
+  sha256 "bf586e4834e55d5e0f858a0ea8a2011e49751474bc157bce97ebca038e464ee9"
 
   url "https://github.com/SoulSniper-V2/ClipStash/releases/download/v#{version}/ClipStash-V2.dmg"
   name "ClipStash"
