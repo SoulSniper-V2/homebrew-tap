@@ -9,5 +9,4 @@ brew install --cask soulsniper-v2/tap/<cask>
 ## Available Casks
 
 - `clipstash`
-- `portable-vpn`
 - `snapstate`
