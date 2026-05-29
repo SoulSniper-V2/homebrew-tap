@@ -1,6 +1,6 @@
 cask "snapstate" do
-  version "2.3.1"
-  sha256 "bdf24cb099169c327ea3fdba6fc85b3cf6f68e0d19dfbf22f6dd01d3bccc33fb"
+  version "2.3.2"
+  sha256 "ca52c8c387e243270bb16a4a8f5049cf8d74e705bd03d83c414aabdcb3ee4f9f"
 
   url "https://github.com/SoulSniper-V2/SnapState/releases/download/v#{version}/SnapState.dmg"
   name "SnapState"
